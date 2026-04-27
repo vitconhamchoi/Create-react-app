@@ -1,14 +1,14 @@
-# 06. Routing trong React vs Angular Router
+# 14. Routing trong React vs Angular Router
 
 ## Angular
 - router là first-class citizen
-- nested route, guard, lazy loading khá rõ
+- guard, lazy loading, nested route khá rõ
 
 ## React
 React không có router built-in.
 Thường dùng `react-router-dom`.
 
-## Ví dụ cơ bản
+## Ví dụ
 
 ```jsx
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -25,16 +25,29 @@ function App() {
 }
 ```
 
-## Guard kiểu React
-Không có guard built-in đẹp như Angular.
-Thường làm kiểu wrapper component.
+## Protected route
 
 ```jsx
+import { Navigate } from 'react-router-dom';
+
 function ProtectedRoute({ children }) {
   const isLoggedIn = true;
   return isLoggedIn ? children : <Navigate to="/login" />;
 }
 ```
 
-## Chốt
-Routing ở React dùng được, nhưng Angular router vẫn đầy đủ và đồng bộ hơn.
+Dùng:
+
+```jsx
+<Route
+  path="/dashboard"
+  element={
+    <ProtectedRoute>
+      <DashboardPage />
+    </ProtectedRoute>
+  }
+/>
+```
+
+## Kết luận
+React routing dùng ổn, nhưng Angular Router vẫn đồng bộ và đầy đủ hơn.

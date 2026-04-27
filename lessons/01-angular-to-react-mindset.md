@@ -1,60 +1,103 @@
-# 01. Tư duy chuyển từ Angular sang React
+# 01. Angular sang React: đổi tư duy thế nào
 
-## Vấn đề lớn nhất
-Người quen Angular sang React hay bị hụt vì nghĩ React là một framework đầy đủ như Angular.
+## Vì sao Angular dev hay bị hụt khi sang React
+Người quen Angular thường nghĩ React cũng là một framework frontend đầy đủ. Đây là sai lệch lớn nhất.
 
-Thực tế:
-- Angular là framework full-stack frontend
-- React chủ yếu là thư viện xây UI
-
-Nghĩa là trong Angular, nhiều thứ có sẵn:
-- dependency injection
-- router chuẩn
-- form chuẩn
-- http client chuẩn
+### Angular cho sẵn
+- DI
+- Router chuẩn
+- HttpClient chuẩn
+- Forms chuẩn
 - structure khá rõ
-- RxJS nằm trong hệ sinh thái
+- lifecycle dễ hình dung
+- RxJS nằm trong lõi cách code
 
-Còn React thì không ép mạnh như vậy.
-Mày phải tự chọn:
+### React không cho sẵn hết
+React chủ yếu lo phần UI rendering. Những thứ khác mày phải tự chọn:
 - router nào
 - form library nào
 - state management nào
-- data fetching nào
+- data fetching strategy nào
 - project structure nào
 
-## Nếu mang tư duy Angular sang React sẽ lỗi ở đâu
-
-### 1. Tìm service, module, DI nhưng không thấy
-React không tổ chức app theo kiểu module/service chuẩn như Angular.
-
-### 2. Tìm lifecycle giống Angular
-React có render cycle và hooks, không giống `ngOnInit`, `ngOnDestroy` theo kiểu cũ.
-
-### 3. Nghĩ rằng React “thiếu”
-Thực ra React không hẳn thiếu. Nó chỉ ít opinionated hơn, bắt mày tự lắp ghép.
-
-## Cách nghĩ đúng
+## So sánh cách nghĩ
 
 ### Angular
-- framework định hướng mạnh
-- app structure tương đối rõ
-- code dễ đồng nhất nếu team đi cùng convention
+Mày thường nghĩ kiểu:
+- tạo module
+- tạo component
+- inject service
+- gọi API qua HttpClient
+- subscribe data
+- render template
 
 ### React
-- linh hoạt hơn
-- ít rào hơn
-- dễ mạnh, nhưng cũng dễ loạn nếu team yếu
+Mày phải nghĩ kiểu:
+- component render theo state hiện tại
+- state đổi thì component re-render
+- hook để quản lý state, effect, memoization
+- service/query lib là thứ tự chọn thêm
 
-## Kỹ năng phải đổi
-Từ Angular sang React, mày phải nâng mạnh mấy thứ này:
-- JavaScript/TypeScript gốc
+## Ví dụ cùng một bài toán
+### Angular
+
+```ts
+@Component({
+  selector: 'app-user-list',
+  template: `
+    <ul>
+      <li *ngFor="let user of users">{{ user.name }}</li>
+    </ul>
+  `
+})
+export class UserListComponent implements OnInit {
+  users: any[] = [];
+
+  constructor(private userService: UserService) {}
+
+  ngOnInit() {
+    this.userService.getUsers().subscribe(data => {
+      this.users = data;
+    });
+  }
+}
+```
+
+### React
+
+```jsx
+import { useEffect, useState } from 'react';
+
+function UserList() {
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    fetch('/api/users')
+      .then(res => res.json())
+      .then(setUsers);
+  }, []);
+
+  return (
+    <ul>
+      {users.map(user => (
+        <li key={user.id}>{user.name}</li>
+      ))}
+    </ul>
+  );
+}
+```
+
+## Cái mày phải học thêm khi sang React
+- render cycle
 - state và re-render
-- effect
-- object identity/reference
+- object identity
+- hooks
 - composition
-- custom hooks
+- cách tách logic bằng custom hooks
 
-## Một câu chốt
+## Kết luận
 Angular cho sẵn đường ray.
-React đưa bộ bánh và bắt mày tự ráp xe.
+React cho mày bộ bánh xe và bắt mày tự ráp hệ thống.
+
+Muốn chuyển hệ không bị ngu thì phải bỏ tư duy: “React thiếu Angular”.
+Tư duy đúng là: “React ít opinionated hơn, nên mình phải tự chủ hơn.”
