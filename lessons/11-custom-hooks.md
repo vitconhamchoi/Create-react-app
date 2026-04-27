@@ -2,8 +2,8 @@
 
 Đây là thứ React rất mạnh.
 
-## Tại sao Angular dev nên thích custom hook
-Trong Angular, mày hay reuse logic qua:
+## Vì sao custom hook đáng học
+Trong nhiều codebase lớn, mày hay reuse logic qua:
 - service
 - shared helper
 - directive
@@ -56,4 +56,4 @@ export function useUsers() {
 ```
 
 ## Kết luận
-Nếu Angular dev có service mindset, thì React dev phải có thêm hook mindset.
+Nếu có service mindset, thì khi học React nên có thêm hook mindset.

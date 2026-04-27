@@ -1,6 +1,6 @@
 # 04. Render cycle, re-render và vì sao React hay gây lú
 
-Đây là chỗ Angular dev hay bị hụt nhất.
+Đây là chỗ rất nhiều người mới học React hay bị hụt nhất.
 
 ## React hoạt động kiểu gì
 React component là function.
@@ -37,8 +37,8 @@ function Counter() {
 
 Bấm nút là render lại.
 
-## Tại sao Angular dev hay lú
-Vì Angular quen kiểu:
+## Tại sao nhiều người hay lú ở chỗ này
+Vì nhiều người từng quen kiểu framework template-first hoặc class-first:
 - component có lifecycle tương đối rõ
 - template được bind vào class instance
 

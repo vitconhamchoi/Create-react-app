@@ -1,6 +1,6 @@
-# 19. Làm mini app React nếu mày từng code Angular
+# 19. Làm mini app React để học nhanh
 
-Cách học nhanh nhất là làm lại một app đơn giản từng làm bằng Angular.
+Cách học nhanh nhất là làm một app nhỏ nhưng đủ tính năng thật.
 
 ## Đề xuất mini project
 ### User management app

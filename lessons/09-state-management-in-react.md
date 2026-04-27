@@ -1,6 +1,6 @@
 # 09. State management cho người quen RxJS
 
-## Angular dev thường quen
+## Những gì nhiều người từng quen
 - service singleton
 - BehaviorSubject
 - Observable
@@ -45,7 +45,7 @@ function Counter() {
 }
 ```
 
-## Mapping tư duy từ Angular
+## Mapping tư duy từ framework có stream mạnh
 - service + BehaviorSubject gần giống global store nhỏ
 - React không bắt mày dùng stream cho mọi thứ
 - nhiều khi state thường + query lib là đủ

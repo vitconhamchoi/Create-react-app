@@ -35,8 +35,8 @@ const loginSchema = z.object({
 });
 ```
 
-## Vì sao Angular dev nên học cái này
-Vì Angular reactive forms mạnh sẵn.
+## Vì sao nên học cái này
+Vì nếu app có form thật thì chỉ code tay sẽ rất mệt.
 Sang React mà không có tool đúng, cảm giác form sẽ rất cùi.
 
 ## Kết luận

@@ -34,7 +34,7 @@ useEffect(() => {
 }, []);
 ```
 
-## So với Angular
+## So với cách test quen thuộc ở framework khác
 - `useEffect(..., [])` gần giống `ngOnInit`
 - cleanup gần giống `ngOnDestroy`
 - nhưng React vẫn nghĩ theo render/dependency, không phải method lifecycle cũ
@@ -60,5 +60,5 @@ useEffect(() => {
 ```
 
 ## Kết luận
-Nếu Angular dev coi `useEffect` như chỗ nhét mọi logic thì rất dễ toang.
+Nếu coi `useEffect` như chỗ nhét mọi logic thì rất dễ toang.
 Nó chỉ nên dùng cho side effects.

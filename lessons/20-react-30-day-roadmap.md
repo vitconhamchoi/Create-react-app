@@ -1,4 +1,4 @@
-# 20. Roadmap 30 ngày chuyển từ Angular sang React
+# 20. Roadmap 30 ngày học React
 
 ## Tuần 1
 Học chắc:
@@ -36,13 +36,13 @@ Làm mini app đầy đủ:
 
 ## Checklist cuối cùng
 Sau 30 ngày, mày nên trả lời được:
-- state trong React khác Angular ở đâu
+- state trong React vận hành thế nào
 - `useEffect` nên dùng thế nào
 - khi nào dùng Context
 - khi nào cần store
-- React thiếu gì so với Angular
+- React không cho sẵn những gì
 - app React nghiêm túc nên lắp stack nào
 
 ## Chốt cuối
-Muốn chuyển từ Angular sang React mà không bị ngu thì đừng chỉ học syntax.
+Muốn học React không bị ngu thì đừng chỉ học syntax.
 Phải học cách React vận hành, cách nó render, và cách tự tổ chức app khi framework không giúp hết.

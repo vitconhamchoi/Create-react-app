@@ -1,6 +1,6 @@
 # 12. Service layer, data fetching và gọi API
 
-## Angular quen gì
+## Những gì nhiều người thường quen ở framework full
 - HttpClient chuẩn
 - interceptor chuẩn
 - service layer rất tự nhiên
@@ -46,5 +46,5 @@ function UsersPage() {
 - app lớn thì đừng fetch tay quá nhiều
 
 ## Kết luận
-React không cho sẵn HttpClient ngon như Angular.
+React không cho sẵn HttpClient hay data layer chuẩn, nên mày phải tự chọn cách fetch rõ ràng.
 Muốn code sạch, mày phải tự tạo data access layer.

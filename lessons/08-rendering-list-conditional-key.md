@@ -44,8 +44,8 @@ Nếu list reorder hoặc delete, key theo index dễ gây bug.
 ))}
 ```
 
-## So với Angular
-Angular có `*ngFor`, React dùng JS thuần `map`.
+## So với cách test quen thuộc ở framework khác
+Một số framework có syntax loop trong template, còn React dùng JS thuần `map`.
 Đó là lý do mày phải chắc JS array methods.
 
 ## Kết luận

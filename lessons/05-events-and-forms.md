@@ -1,6 +1,6 @@
 # 05. Event handling và form trong React
 
-## Angular quen gì
+## Những gì nhiều người thường quen ở framework full
 - `(click)`
 - `[(ngModel)]`
 - reactive forms rất mạnh
@@ -51,8 +51,8 @@ function LoginForm() {
 }
 ```
 
-## So với Angular ngModel
-### Angular
+## So với two-way binding quen thuộc
+### Cách nghĩ kiểu framework full
 
 ```html
 <input [(ngModel)]="email" />
@@ -65,7 +65,7 @@ function LoginForm() {
 ```
 
 ## Kết luận thật lòng
-- Angular form built-in ngon hơn React
+- form built-in của nhiều framework full thường mạnh hơn React
 - React form dùng tay thì verbose hơn
 - app nghiêm túc nên dùng `react-hook-form`
 

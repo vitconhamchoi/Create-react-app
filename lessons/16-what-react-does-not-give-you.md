@@ -1,6 +1,6 @@
-# 16. React thiếu gì so với Angular và phải tự bù gì
+# 16. Những thứ React không cho sẵn và cách tự bù
 
-## Angular mạnh ở chỗ gì
+## Những thứ React không làm sẵn
 - framework full
 - convention rõ
 - forms mạnh
@@ -34,7 +34,7 @@ Ví dụ:
 </QueryClientProvider>
 ```
 
-Tức là nhiều thứ Angular làm hộ, React bắt mày tự gắn.
+Tức là nhiều thứ framework khác có thể làm hộ, còn React bắt mày tự gắn.
 
 ## Kết luận
 React mạnh vì linh hoạt.

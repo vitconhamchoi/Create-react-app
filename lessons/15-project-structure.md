@@ -1,6 +1,6 @@
-# 15. Project structure trong React cho người từ Angular sang
+# 15. Project structure trong React
 
-React không ép structure mạnh như Angular, nên nếu team không có convention thì code rất dễ loạn.
+React không ép structure mạnh, nên nếu team không có convention thì code rất dễ loạn.
 
 ## Một structure đơn giản, đủ dùng
 
@@ -34,7 +34,7 @@ features/users/
   types/user.ts
 ```
 
-## Vì sao hợp với Angular dev
+## Vì sao structure này dễ dùng
 Vì nó vẫn giữ tư duy:
 - tách theo feature
 - tách UI và logic

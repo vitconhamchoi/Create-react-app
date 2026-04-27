@@ -1,6 +1,6 @@
 # 13. TanStack Query cho React app nghiêm túc
 
-Nếu Angular dev quen service + RxJS thì khi sang React, một tool rất đáng học là TanStack Query.
+Nếu mày quen tư duy service layer và data flow rõ ràng, thì TanStack Query là một tool rất đáng học khi làm React.
 
 ## Nó giải quyết gì
 - loading

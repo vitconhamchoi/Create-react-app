@@ -1,6 +1,6 @@
-# 14. Routing trong React vs Angular Router
+# 14. Routing trong React
 
-## Angular
+## Router trong nhiều framework full
 - router là first-class citizen
 - guard, lazy loading, nested route khá rõ
 
@@ -50,4 +50,4 @@ Dùng:
 ```
 
 ## Kết luận
-React routing dùng ổn, nhưng Angular Router vẫn đồng bộ và đầy đủ hơn.
+Routing trong React đủ mạnh để làm app thật, nhưng mày phải tự chọn và tổ chức rõ.

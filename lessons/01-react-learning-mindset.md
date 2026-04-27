@@ -1,9 +1,9 @@
-# 01. Angular sang React: đổi tư duy thế nào
+# 01. Đổi tư duy để học React đúng cách
 
-## Vì sao Angular dev hay bị hụt khi sang React
-Người quen Angular thường nghĩ React cũng là một framework frontend đầy đủ. Đây là sai lệch lớn nhất.
+## Vì sao người mới học React hay bị hụt
+Nhiều người mới học React hay tưởng nó là một framework frontend full sẵn mọi thứ. Đây là sai lệch lớn nhất.
 
-### Angular cho sẵn
+### Nhiều framework full thường cho sẵn
 - DI
 - Router chuẩn
 - HttpClient chuẩn
@@ -22,7 +22,7 @@ React chủ yếu lo phần UI rendering. Những thứ khác mày phải tự c
 
 ## So sánh cách nghĩ
 
-### Angular
+### Cách nghĩ kiểu framework full
 Mày thường nghĩ kiểu:
 - tạo module
 - tạo component
@@ -39,7 +39,7 @@ Mày phải nghĩ kiểu:
 - service/query lib là thứ tự chọn thêm
 
 ## Ví dụ cùng một bài toán
-### Angular
+### Cách nghĩ kiểu framework full
 
 ```ts
 @Component({
@@ -96,8 +96,8 @@ function UserList() {
 - cách tách logic bằng custom hooks
 
 ## Kết luận
-Angular cho sẵn đường ray.
+Nhiều framework full cho sẵn đường ray.
 React cho mày bộ bánh xe và bắt mày tự ráp hệ thống.
 
-Muốn chuyển hệ không bị ngu thì phải bỏ tư duy: “React thiếu Angular”.
+Muốn học React không bị lệch thì phải bỏ tư duy so bì framework trước khi hiểu bản chất React.
 Tư duy đúng là: “React ít opinionated hơn, nên mình phải tự chủ hơn.”

@@ -1,8 +1,8 @@
 # 03. Component, JSX, props, state
 
-## React nhìn từ mắt Angular dev
+## Cách nhìn React cho người đã quen framework full
 
-### Angular
+### Cách nghĩ kiểu framework full
 - component = class + template + decorator
 - input/output rõ bằng decorator
 
@@ -48,9 +48,9 @@ function Counter() {
 }
 ```
 
-## So sánh Angular Input với React props
+## So sánh input kiểu decorator với React props
 
-### Angular
+### Cách nghĩ kiểu framework full
 
 ```ts
 @Input() title!: string;

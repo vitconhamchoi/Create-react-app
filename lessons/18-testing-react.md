@@ -22,8 +22,8 @@ test('renders hello text', () => {
 ## Triết lý đúng
 Test theo hành vi nhìn từ user, không test implementation detail quá nhiều.
 
-## So với Angular
-Angular có TestBed, structure test khác.
+## So với cách test quen thuộc ở framework khác
+Một số framework khác có test harness riêng, còn React test thường nhẹ hơn.
 React test thường nhẹ hơn, nhưng cũng dễ lỏng hơn nếu team không có kỷ luật.
 
 ## Kết luận
